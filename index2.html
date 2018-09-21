@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <style>
+        body {
+            font-size: 17px;
+            font-family: arial;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery Crash Course</h1>
+    </header>
+    <div class="container">
+        <h1 class="header1"> Heading One </h1>
+        <p class=para1>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Sint temporibus perferendis mollitia quasi blanditiis quaerat sit minus velit ex excepturi.</p>
+
+        <h1 class="header2"> Heading One </h1>
+        <p class=para2>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Sint temporibus perferendis mollitia quasi blanditiis quaerat sit minus velit ex excepturi.</p>
+
+        <ul class="list">
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+    </div>
+
+    <script>
+        // $('h1').hide();
+        // $('h1.header1').hide();
+        $('.header1').css('color', 'lightcoral');
+        $('.header2').css('color', 'red');
+        $('p span').css('border-bottom', '1px solid red');
+
+        $('ul.list li:first').css('color', 'skyblue');
+        $('ul.list li:last').css('color', 'blue');
+        $('ul.list li:even').css('color', 'white');
+        $('ul.list li:even').css('background-color', 'lightgray');
+        $('ul.list li:odd').css('background-color', 'gray');
+        $('ul.list li').css('list-style', 'none');
+    </script>
+</body>
+</html>
